@@ -29,8 +29,8 @@
       <td>-</td>
     </tr>
         <tr>
-      <td>-</td>
-      <td>-</td>
+      <td>u202422549</td>
+      <td>Jorge Mateo León Naupari</td>
     </tr>
   </table>
 </div>
@@ -42,6 +42,7 @@
 | Versión | Fecha      | Autores                      | Descripción de modificación                           |
 | ------- | ---------- | ---------------------------- | ----------------------------------------------------- |
 | 1.0     | 30/10/2026 | Milenko Rubén Cayanchi Avila | Redacción Antecedentes y problemática (1.2.1) y Segmentos Objetivo (1.3) |
+| 1.0     | 30/10/2026 | Jorge Mateo León Naupari     | Descripción de la Startup (1.1.1) y  (1.1.2)                             |
 
 ## Contenido
 
