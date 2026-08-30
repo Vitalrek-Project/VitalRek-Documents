@@ -41,7 +41,7 @@
 
 | Versión | Fecha      | Autores                      | Descripción de modificación                           |
 | ------- | ---------- | ---------------------------- | ----------------------------------------------------- |
-| 1.0     | 30/10/2026 | Milenko Rubén Cayanchi Avila | Creación del repositorio y estructura base del README |
+| 1.0     | 30/10/2026 | Milenko Rubén Cayanchi Avila | Redacción Antecedentes y problemática (1.2.1) y Segmentos Objetivo (1.3) |
 
 ## Contenido
 
