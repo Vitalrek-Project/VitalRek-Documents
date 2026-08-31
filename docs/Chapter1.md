@@ -16,7 +16,7 @@ A nivel técnico, VitalTrek integra un ecosistema IoT con dispositivos wearables
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <br>![Foto](../assets/images/members/milenko_foto.jpeg)<br> | **Cayanchi Avila, Milenko Rubén**<br><br>Código de Estudiante: U202312566<br>Estudiante de Ingeniería de Software, enfocado en el desarrollo de soluciones tecnológicas innovadoras para la mejora de la calidad de vida. Poseo conocimientos básicos en Python y conocimientos básicos/intermedios en C++. Mi objetivo es adquirir conocimientos avanzados en inteligencia artificial y desarrollo de aplicaciones de salud, con el fin de mejorar mis habilidades y contribuir en el campo de la salud tecnológica. |
 | <br>![Foto](../assets/images/members/jorge_foto.jpeg)<br> | **León Naupari, Jorge Mateo**<br><br>Código de Estudiante: U202422549<br>Soy Jorge Mateo León Naupari, tengo 19 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Actualmente me encuentro cursando el cuarto ciclo de la carrera. Tengo conocimientos en el lenguaje de programación C++ y un gran interés por seguir desarrollando mis habilidades en el ámbito tecnológico. Mi objetivo es aplicar mis conocimientos en proyectos que me permitan crecer profesionalmente, aportar soluciones innovadoras y adquirir experiencia en el desarrollo de software.                                                                                                                                                                                                                                                                                                                                                                                                              |
-|                                                             | **[Apellidos, Nombres]**<br><br>Código de Estudiante: [código]<br><br>[Descripción personal — completar]                                                                                                                                                                                                                                                                                                                                                                                                              |
+| <br>![Foto](../assets/images/chapter1_images/Ariel_foto.jpg)<br>   | **Mendoza Blanco, Ariel Roberto**<br><br>Código de Estudiante: U202419667<br>Hola a todos, soy Ariel Mendoza, estudiante de Ingeniería de Software. En el ámbito técnico, me especializo en el desarrollo backend, diseño de bases de datos y arquitectura de sistemas. Dentro del proyecto VitalTrek, mi rol está enfocado en la integración de datos telemétricos y la lógica de negocio, asegurando que la sincronización de checkpoints y la detección de alertas de signos vitales funcionen de forma consistente. Mi objetivo es construir una solución técnica sólida que convierta datos de campo en respuestas operativas inmediatas para la seguridad del turista.
 |                                                             | **[Apellidos, Nombres]**<br><br>Código de Estudiante: [código]<br><br>[Descripción personal — completar]                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ---
@@ -47,7 +47,45 @@ Actualmente, las agencias de turismo y los guías dependen principalmente de tel
 
 #### 1.2.2.2. Lean UX Assumptions
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
+#### 1.2.2.3. Lean UX Hypothesis Statement
+
+* **Hipótesis 1 — Sincronización offline en Checkpoints y Telemetría de Ubicación**
+  * **Creemos que lograremos:** Incrementar en un 85% la trazabilidad operativa del grupo y eliminar los puntos ciegos de telemetría en zonas remotas sin cobertura celular.
+  * **Si:** Los operadores de agencias de turismo de aventura y los guías de trekking en campo
+  * **Obtienen:** La transmisión automatizada y confiable de la ubicación y el estado de los turistas cada vez que el grupo pasa por un punto de control de la ruta
+  * **Con:** Un motor de sincronización asincrónica por checkpoints Bluetooth que captura y almacena temporalmente la telemetría local de los wearables.
+
+---
+
+* **Hipótesis 2 — Motor de Detección Temprana de Anomalías en Signos Vitales y Retrasos**
+  * **Creemos que lograremos:** Reducir en un 60% el tiempo de respuesta ante emergencias y despliegue de búsqueda o rescate.
+  * **Si:** Los administradores de operaciones de la agencia y el personal de seguridad en campo
+  * **Obtienen:** Notificaciones automáticas de alerta temprana cuando un turista presenta métricas fisiológicas anormales (SpO2, ritmo cardíaco) o retrasos críticos respecto al tiempo estimado de ruta
+  * **Con:** Un algoritmo de backend basado en reglas y umbrales médicos configurados según la altitud y dificultad del recorrido.
+
+---
+
+* **Hipótesis 3 — Dashboard Web Centralizado de Operaciones e Incidentes**
+  * **Creemos que lograremos:** Disminuir en un 40% la carga administrativa en reportes diarios y alcanzar una tasa de renovación de suscripciones superior al 80%.
+  * **Si:** Las agencias de turismo de aventura (MYPEs)
+  * **Obtienen:** Una vista centralizada y unificada para la supervisión de todas sus expediciones activas, bitácoras de los guías e historial de escalamiento de incidentes
+  * **Con:** Un panel web operativo adaptable diseñado para el monitoreo tanto en tiempo real como en análisis posterior al tour.
+
+---
+
+* **Hipótesis 4 — Módulo de Curaduría de Notas Técnicas de Ruta y Puntos Críticos**
+  * **Creemos que lograremos:** Una percepción de seguridad del turista del 95% y una tasa cercana a 0% de incidentes derivados de desinformación del terreno.
+  * **Si:** Los guías turísticos acreditados y los turistas de aventura
+  * **Obtienen:** Acceso a alertas y advertencias técnicas verificadas y actualizadas (zonas de derrumbe, crecida de ríos, puntos ciegos) exclusivas del operador turístico
+  * **Con:** Una herramienta de gestión y curaduría de notas de ruta administrada directamente por la agencia en la plataforma.
+
+---
+
+* **Hipótesis 5 — Gestión Automatizada de Suscripciones SaaS (Software as a Service) con MercadoPago**
+  * **Creemos que lograremos:** Una tasa de conversión de al menos el 30% de agencias piloto a planes de pago recurrentes y una tasa de abandono en checkout inferior al 15%.
+  * **Si:** Los administradores de negocios de turismo de aventura en Cusco, Áncash, Arequipa y Puno
+  * **Obtienen:** Un proceso de facturación y pago flexible, seguro y sin fricciones mediante métodos de pago locales para suscripciones mensuales o por temporada
+  * **Con:** Un módulo de gestión de suscripciones SaaS integrado con la pasarela de pagos de MercadoPago.
 
 #### 1.2.2.4. Lean UX Canvas
 
