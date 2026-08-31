@@ -45,7 +45,132 @@ Actualmente, las agencias de turismo y los guías dependen principalmente de tel
 
 #### 1.2.2.1. Lean UX Problem Statements
 
+*Domain*
+
+VitalTrek opera en la intersección de la gestión operativa turística, la seguridad preventiva y la telemetría IoT. Su ámbito de aplicación se encuentra en el turismo de aventura y las expediciones al aire libre, especialmente en rutas caracterizadas por la ausencia o intermitencia de cobertura celular y otras formas de conectividad convencional.
+
+*Customer Segments*
+
+El modelo de servicio contempla dos segmentos relacionados entre sí:
+
+* *Segmento B2B (Cliente y comprador):* Agencias y operadores de turismo de aventura, principalmente MYPEs, que organizan tours de trekking y montañismo en zonas de baja o nula conectividad y necesitan supervisar el estado y progreso de sus grupos durante el recorrido.
+* *Segmento B2C (Usuario final):* Turistas de aventura, nacionales y extranjeros, que realizan rutas remotas y buscan mayor seguridad, navegación offline, acceso a información contextual de la ruta y un registro digital de su recorrido.
+
+Aunque ambos segmentos utilizan o se benefician de la solución, el foco comercial inicial estará en el segmento B2B, mientras que los turistas constituyen los usuarios finales beneficiarios del servicio.
+
+*Pain Points*
+
+* *Para las agencias:* Cuando los grupos ingresan a zonas sin cobertura celular, la agencia pierde visibilidad sobre su ubicación y estado y depende de medios como radios o reportes manuales. Esto dificulta detectar oportunamente retrasos, anomalías o posibles emergencias y puede incrementar los tiempos de respuesta.
+* *Para los guías de campo:* La falta de información actualizada sobre el estado de los grupos dificulta identificar rápidamente qué turistas requieren atención y tomar decisiones oportunas ante retrasos o anomalías detectadas durante el recorrido.
+* *Para los turistas:* La ausencia de conectividad en determinados tramos genera inseguridad y limita el acceso a información digital de apoyo durante el recorrido. La falta de herramientas offline puede reducir su autonomía y confianza al transitar por zonas remotas.
+
+*Gap*
+
+Existe una desconexión entre la necesidad de supervisión operativa durante un tour de aventura y las herramientas disponibles en zonas sin cobertura celular. Las aplicaciones convencionales dependen de conectividad para transmitir información, mientras que la comunicación por radio no proporciona por sí sola una trazabilidad automatizada de la ubicación y el estado de cada integrante del grupo. VitalTrek busca reducir este vacío mediante una plataforma que combina telemetría simulada, checkpoints Bluetooth y sincronización asincrónica para registrar información periódica, detectar retrasos y anomalías y mantener una trazabilidad operativa útil sin requerir conexión celular continua durante todo el recorrido.
+
+*Vision / Strategy*
+
+Nuestra visión es establecer a VitalTrek como una solución tecnológica para la gestión preventiva y la supervisión de tours de aventura en zonas remotas del Perú. La estrategia se basa en una arquitectura de software resiliente y un ecosistema IoT representado de forma simulada para el alcance del proyecto: el dispositivo del turista registra posición y signos vitales y sincroniza los datos en ráfagas al pasar por checkpoints Bluetooth. La plataforma procesa esta información mediante un motor de reglas, evalúa retrasos y posibles anomalías y genera alertas visibles para la agencia y el guía. Paralelamente, el turista dispone de herramientas de consulta offline e información contextual de la ruta proporcionada y gestionada por la agencia o el guía responsable.
+
+*Initial Segment*
+
+El despliegue inicial estará orientado a agencias y operadores de turismo de aventura, principalmente MYPEs, que gestionan rutas de trekking y montañismo en zonas de baja o nula conectividad, especialmente en destinos como Cusco, Áncash, Arequipa y Puno. Estas organizaciones enfrentan directamente la pérdida de visibilidad sobre sus grupos cuando abandonan zonas con señal y requieren mejorar sus mecanismos de supervisión y respuesta ante incidentes. Los turistas serán los usuarios finales de la solución, pero la adquisición y contratación del servicio se enfocará inicialmente en las agencias y operadores.
+
+¿Cómo podemos mejorar la capacidad de respuesta y supervisión de las agencias durante los tours de aventura, permitiéndoles detectar retrasos y posibles anomalías mediante sincronización periódica aun sin cobertura celular continua y, al mismo tiempo, brindar a los turistas mayor seguridad e información de apoyo durante el recorrido?
+
 #### 1.2.2.2. Lean UX Assumptions
+
+*Assumptions Worksheet*
+
+*Business Assumptions*
+
+* *Creo que mis clientes tienen la necesidad de* mantener visibilidad sobre la ubicación y el estado de sus grupos durante tours en zonas remotas, reduciendo la incertidumbre y mejorando los tiempos de respuesta ante posibles incidentes, sin depender de una conexión celular continua.
+
+* *Estas necesidades pueden resolverse con* VitalTrek, una plataforma web integrada con una capa IoT simulada para el alcance del proyecto, donde los dispositivos de los turistas registran telemetría y la sincronizan mediante checkpoints Bluetooth, permitiendo a las agencias visualizar el estado de sus grupos y recibir alertas ante retrasos o posibles anomalías.
+
+* *Mis clientes iniciales son:*
+
+  * *Segmento B2B:* Agencias y operadores de turismo de aventura, principalmente MYPEs, que gestionan rutas de trekking y montañismo en zonas de baja o nula conectividad y constituyen el principal segmento comprador.
+  * *Segmento B2C:* Turistas de aventura nacionales y extranjeros que realizan rutas remotas y utilizan las funciones de seguridad, navegación offline e información contextual proporcionadas por la plataforma.
+
+* *El principal valor que un cliente quiere obtener de mi servicio es* mejorar la supervisión operativa y la seguridad preventiva durante el tour, permitiendo a la agencia conocer periódicamente el estado de sus grupos y actuar oportunamente ante retrasos o posibles anomalías, aun cuando no exista cobertura celular continua.
+
+* *También pueden obtener estos beneficios adicionales:*
+
+  * Para las agencias: reducción de incertidumbre operativa, mejor organización de rutas y mayor capacidad de respuesta ante incidentes.
+  * Para los guías: recepción de alertas sobre el estado de los grupos y apoyo para tomar decisiones durante el recorrido.
+  * Para los turistas: acceso a información contextual de la ruta, herramientas de navegación offline y un resumen digital de su recorrido.
+
+* *Adquiriré la mayoría de mis clientes a través de* venta directa B2B a agencias y operadores de turismo de aventura, demostraciones del producto, pilotos con empresas del sector y contacto directo con organizaciones ubicadas en destinos como Cusco, Áncash, Arequipa y Puno.
+
+* *Ganaré dinero mediante* un modelo SaaS basado en una suscripción mensual o anual por el uso de la plataforma, según el volumen de turistas o grupos gestionados. La gestión de suscripciones y pagos podrá contemplar una pasarela como MercadoPago. La infraestructura IoT física queda fuera del alcance del MVP académico, ya que su funcionamiento será simulado.
+
+* *Mi principal competencia en el mercado será* el uso de sistemas de comunicación por radio (VHF/UHF), la coordinación mediante aplicaciones de mensajería cuando existe cobertura y los procesos manuales de seguimiento realizados por los guías. También existen soluciones de comunicación o navegación satelital que cubren necesidades específicas, pero no necesariamente integran en un mismo flujo la gestión operativa de la agencia con la detección de retrasos y anomalías mediante checkpoints.
+
+* *Superaremos a la competencia debido a* nuestro enfoque integrado de supervisión operativa: VitalTrek permite configurar rutas y checkpoints, recibir telemetría, evaluar retrasos y posibles anomalías mediante reglas y centralizar las alertas en un dashboard para la agencia y el guía, manteniendo además herramientas de consulta offline para el turista.
+
+* *El mayor riesgo de mi producto es* que la frecuencia de sincronización entre checkpoints no sea suficiente para detectar oportunamente una situación crítica o que las reglas utilizadas para identificar retrasos y anomalías generen alertas incorrectas o falsas alarmas.
+
+* *Lo resolveremos mediante* una arquitectura que priorice la transmisión de datos relevantes en ráfagas cortas, reglas configurables según la ruta y ventanas de tiempo esperadas, así como pruebas tempranas del MVP para medir la latencia, la confiabilidad de la sincronización y la utilidad de las alertas.
+
+* *Otras suposiciones que, si se demuestran falsas, harán que nuestro negocio fracase:*
+
+  * Que las agencias y operadores de turismo estén dispuestos a utilizar una plataforma digital para supervisar sus grupos durante los recorridos.
+  * Que los guías consideren útiles y accionables las alertas y puedan actuar sobre ellas durante la operación.
+  * Que los turistas estén dispuestos a utilizar el dispositivo o wearable proporcionado por la agencia y consultar las herramientas offline.
+  * Que las agencias perciban suficiente valor en la solución como para convertir el uso piloto en una suscripción pagada.
+
+*User Assumptions*
+
+* *¿Quién es el usuario?*
+
+  * El administrador u operador (B2B): responsable de configurar las rutas y checkpoints y supervisar los grupos desde el dashboard.
+  * El guía de campo: responsable de recibir alertas y actuar ante retrasos o posibles anomalías durante el recorrido.
+  * El turista (B2C): persona que lleva el dispositivo o wearable y consulta la información disponible offline durante la ruta.
+
+* *¿Dónde encaja nuestro producto en su vida?* En la fase de ejecución operativa del turismo. Para el administrador, funciona como una herramienta de configuración y centro de supervisión; para el guía, como un mecanismo de recepción de alertas en campo; y para el turista, como una herramienta de consulta, navegación y apoyo durante el recorrido.
+
+* *¿Qué problemas soluciona nuestro producto?*
+
+  * La pérdida de visibilidad de las agencias sobre sus grupos al ingresar en zonas sin cobertura celular.
+  * La dificultad para detectar oportunamente retrasos o posibles anomalías durante el recorrido.
+  * La falta de un mecanismo centralizado para comunicar alertas relevantes al personal responsable.
+  * La inseguridad del turista durante tramos sin conectividad y la dificultad para consultar información de la ruta sin conexión.
+
+* *¿Cuándo y cómo se utiliza nuestro producto?*
+
+  * En la configuración: el administrador define la ruta, establece checkpoints y configura las ventanas de tiempo esperadas.
+  * En campo: el dispositivo del turista, simulado para el alcance del proyecto, registra posición y signos vitales. Al pasar por un checkpoint, la información disponible se sincroniza en ráfaga con la API.
+  * En monitoreo: la agencia visualiza el estado de sus grupos desde el dashboard y recibe alertas cuando el motor de reglas identifica un retraso o una posible anomalía.
+  * Durante la atención: el guía recibe la alerta y puede actuar en el terreno.
+  * Al finalizar: el sistema genera un resumen simple del recorrido realizado.
+
+* *¿Qué características son importantes?* Tolerancia a fallos de conectividad (offline-first), configuración de rutas y checkpoints, registro e ingesta de telemetría, evaluación automática de retrasos y posibles anomalías mediante reglas, alertas visibles en el dashboard, notificaciones al guía, consulta offline de información de la ruta y gestión de suscripciones para el cliente B2B.
+
+* *¿Cómo debe verse y comportarse nuestro producto?* Debe presentar un diseño minimalista, profesional y funcional, con interfaces claras y de alto contraste para facilitar la lectura durante la operación. El dashboard debe priorizar el estado de los grupos, las alertas y la información de los checkpoints, mientras que el panel del turista debe presentar de forma sencilla la información de la ruta disponible offline.
+
+*Feature Assumptions*
+
+- Creemos que nuestros clientes necesitan una plataforma que permita configurar rutas y checkpoints esperados y supervisar periódicamente el progreso de los grupos sin depender de una conexión celular continua.
+- Estas necesidades se pueden resolver con una arquitectura que reciba telemetría del dispositivo del turista, simulado para el proyecto, y la sincronice en ráfagas mediante checkpoints Bluetooth hacia una API RESTful.
+- El valor principal que un cliente quiere de nuestro servicio es la capacidad de detectar automáticamente retrasos y posibles anomalías y visualizarlos como alertas en un dashboard centralizado para que el personal responsable pueda actuar oportunamente.
+- El cliente también puede obtener estos beneficios adicionales: generación automática de un resumen simple del recorrido, consulta de información contextual de la ruta sin conexión y configuración de notas operativas sobre puntos críticos o condiciones del terreno por parte de la agencia o guía responsable de la ruta. Estas notas pertenecen a la ruta gestionada por la organización y no constituyen un feed público de reseñas o contenido generado por cualquier usuario.
+- Vamos a adquirir la mayoría de nuestros clientes a través de demostraciones del producto, pilotos con agencias y operadores de turismo de aventura y contacto directo con empresas del sector en destinos de alta actividad turística y rutas remotas.
+- Haremos dinero a través de un modelo SaaS de suscripción mensual o anual según el volumen de turistas o grupos gestionados. La gestión de los pagos y suscripciones formará parte de la propuesta comercial del producto, mientras que la comercialización de infraestructura física queda fuera del alcance del MVP académico debido a que la capa IoT será simulada.
+- Nuestra competencia principal en el mercado serán los métodos tradicionales de seguimiento mediante radiocomunicación VHF/UHF, coordinación manual y aplicaciones de mensajería cuando existe cobertura, además de soluciones especializadas de comunicación o navegación satelital.
+- Los venceremos debido a que VitalTrek integra en un mismo flujo la configuración operativa de rutas y checkpoints, la ingesta de telemetría, el motor de reglas, las alertas para agencia y guía y las herramientas offline para el turista, con un enfoque específico en la operación de tours en zonas de baja o nula conectividad.
+- Nuestro mayor riesgo de producto es que la información disponible entre checkpoints no sea suficientemente frecuente para detectar oportunamente un retraso o posible anomalía, o que las reglas de detección produzcan demasiadas falsas alarmas.
+- Resolveremos esto a través de reglas configurables basadas en ventanas de tiempo y umbrales, transmisión priorizada de los datos relevantes y validaciones tempranas del MVP para evaluar la utilidad de las alertas y la confiabilidad de la sincronización.
+- Otra suposición es que los guías considerarán accionables las alertas generadas por el sistema y podrán utilizarlas durante la operación. Si esto resulta falso, la capacidad de VitalTrek para mejorar la respuesta ante incidentes se verá afectada.
+
+*Business Outcomes*
+
+- Reducción del 40% en el tiempo promedio de detección de retrasos o posibles anomalías durante los primeros seis meses de uso en campo.
+- Registro exitoso del paso de al menos el 95% de los turistas por los checkpoints configurados, manteniendo una pérdida de datos inferior al 5% durante las pruebas del sistema.
+- Reducción del 40% en el tiempo promedio requerido por las agencias para identificar y gestionar incidencias relacionadas con retrasos o anomalías durante los recorridos.
+- Conversión de al menos el 25% de las agencias que participen en un piloto gratuito a una suscripción anual pagada durante los primeros tres meses posteriores al piloto.
+- Al menos el 85% de los turistas encuestados calificará como "Alta" o "Muy Alta" su percepción de seguridad y utilidad de las herramientas offline durante el recorrido.
+
 
 #### 1.2.2.3. Lean UX Hypothesis Statement
 
