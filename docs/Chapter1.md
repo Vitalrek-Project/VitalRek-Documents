@@ -12,12 +12,13 @@ A nivel técnico, VitalTrek integra un ecosistema IoT con dispositivos wearables
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Foto                                                        | Integrante                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <br>![Foto](../assets/images/members/milenko_foto.jpeg)<br> | **Cayanchi Avila, Milenko Rubén**<br><br>Código de Estudiante: U202312566<br>Estudiante de Ingeniería de Software, enfocado en el desarrollo de soluciones tecnológicas innovadoras para la mejora de la calidad de vida. Poseo conocimientos básicos en Python y conocimientos básicos/intermedios en C++. Mi objetivo es adquirir conocimientos avanzados en inteligencia artificial y desarrollo de aplicaciones de salud, con el fin de mejorar mis habilidades y contribuir en el campo de la salud tecnológica. |
-| <br>![Foto](../assets/images/members/jorge_foto.jpeg)<br> | **León Naupari, Jorge Mateo**<br><br>Código de Estudiante: U202422549<br>Soy Jorge Mateo León Naupari, tengo 19 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Actualmente me encuentro cursando el cuarto ciclo de la carrera. Tengo conocimientos en el lenguaje de programación C++ y un gran interés por seguir desarrollando mis habilidades en el ámbito tecnológico. Mi objetivo es aplicar mis conocimientos en proyectos que me permitan crecer profesionalmente, aportar soluciones innovadoras y adquirir experiencia en el desarrollo de software.                                                                                                                                                                                                                                                                                                                                                                                                              |
-| <br>![Foto](../assets/images/chapter1_images/Ariel_foto.jpg)<br>   | **Mendoza Blanco, Ariel Roberto**<br><br>Código de Estudiante: U202419667<br>Hola a todos, soy Ariel Mendoza, estudiante de Ingeniería de Software. En el ámbito técnico, me especializo en el desarrollo backend, diseño de bases de datos y arquitectura de sistemas. Dentro del proyecto VitalTrek, mi rol está enfocado en la integración de datos telemétricos y la lógica de negocio, asegurando que la sincronización de checkpoints y la detección de alertas de signos vitales funcionen de forma consistente. Mi objetivo es construir una solución técnica sólida que convierta datos de campo en respuestas operativas inmediatas para la seguridad del turista.
-|                                                             | **[Apellidos, Nombres]**<br><br>Código de Estudiante: [código]<br><br>[Descripción personal — completar]                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Foto                                                        | Integrante                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <br>![Foto](../assets/images/members/milenko_foto.jpeg)<br> | **Cayanchi Avila, Milenko Rubén**<br><br>Código de Estudiante: U202312566<br>Estudiante de Ingeniería de Software, enfocado en el desarrollo de soluciones tecnológicas innovadoras para la mejora de la calidad de vida. Poseo conocimientos básicos en Python y conocimientos básicos/intermedios en C++. Mi objetivo es adquirir conocimientos avanzados en inteligencia artificial y desarrollo de aplicaciones de salud, con el fin de mejorar mis habilidades y contribuir en el campo de la salud tecnológica.                                                                                                                                                                                        |
+| <br>![Foto](../assets/images/members/jorge_foto.jpeg)<br>   | **León Naupari, Jorge Mateo**<br><br>Código de Estudiante: U202422549<br>Soy Jorge Mateo León Naupari, tengo 19 años y soy estudiante de la carrera de Ingeniería de Software en la Universidad Peruana de Ciencias Aplicadas (UPC). Actualmente me encuentro cursando el cuarto ciclo de la carrera. Tengo conocimientos en el lenguaje de programación C++ y un gran interés por seguir desarrollando mis habilidades en el ámbito tecnológico. Mi objetivo es aplicar mis conocimientos en proyectos que me permitan crecer profesionalmente, aportar soluciones innovadoras y adquirir experiencia en el desarrollo de software.                                                                         |
+| <br>![Foto](../assets/images/members/Ariel_foto.jpg)<br>    | **Mendoza Blanco, Ariel Roberto**<br><br>Código de Estudiante: U202419667<br>Hola a todos, soy Ariel Mendoza, estudiante de Ingeniería de Software. En el ámbito técnico, me especializo en el desarrollo backend, diseño de bases de datos y arquitectura de sistemas. Dentro del proyecto VitalTrek, mi rol está enfocado en la integración de datos telemétricos y la lógica de negocio, asegurando que la sincronización de checkpoints y la detección de alertas de signos vitales funcionen de forma consistente. Mi objetivo es construir una solución técnica sólida que convierta datos de campo en respuestas operativas inmediatas para la seguridad del turista.                                 |
+| <br>![Foto](../assets/images/members/Miler_foto.jpeg)<br>   | **Rodriguez Rojas, Miler Alexander**<br><br>Código de Estudiante: U20241A827<br><br>Soy estudiante de Ingeniería de Software y actualmente curso el sexto ciclo. Cuento con conocimientos en C++, SQL Server Management, HTML, CSS, JavaScript, Python y TypeScript a nivel básico, principalmente orientados al desarrollo de software y aplicaciones web. Me encuentro en un proceso de desarrollo y aprendizaje continuo, buscando fortalecer mis conocimientos técnicos, adquirir experiencia y crecer profesionalmente. Mi objetivo es aplicar lo aprendido en proyectos que me permitan aportar soluciones innovadoras, trabajar en equipo y afrontar nuevos desafíos dentro del ámbito tecnológico.   |
+|                                                             | **[Apellidos, Nombres]**<br><br>Código de Estudiante: [código]<br><br>[Descripción personal — completar]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 ---
 
@@ -47,47 +48,25 @@ Actualmente, las agencias de turismo y los guías dependen principalmente de tel
 
 #### 1.2.2.2. Lean UX Assumptions
 
-#### 1.2.2.3. Lean UX Hypothesis Statement
-
-* **Hipótesis 1 — Sincronización offline en Checkpoints y Telemetría de Ubicación**
-  * **Creemos que lograremos:** Incrementar en un 85% la trazabilidad operativa del grupo y eliminar los puntos ciegos de telemetría en zonas remotas sin cobertura celular.
-  * **Si:** Los operadores de agencias de turismo de aventura y los guías de trekking en campo
-  * **Obtienen:** La transmisión automatizada y confiable de la ubicación y el estado de los turistas cada vez que el grupo pasa por un punto de control de la ruta
-  * **Con:** Un motor de sincronización asincrónica por checkpoints Bluetooth que captura y almacena temporalmente la telemetría local de los wearables.
-
----
-
-* **Hipótesis 2 — Motor de Detección Temprana de Anomalías en Signos Vitales y Retrasos**
-  * **Creemos que lograremos:** Reducir en un 60% el tiempo de respuesta ante emergencias y despliegue de búsqueda o rescate.
-  * **Si:** Los administradores de operaciones de la agencia y el personal de seguridad en campo
-  * **Obtienen:** Notificaciones automáticas de alerta temprana cuando un turista presenta métricas fisiológicas anormales (SpO2, ritmo cardíaco) o retrasos críticos respecto al tiempo estimado de ruta
-  * **Con:** Un algoritmo de backend basado en reglas y umbrales médicos configurados según la altitud y dificultad del recorrido.
-
----
-
-* **Hipótesis 3 — Dashboard Web Centralizado de Operaciones e Incidentes**
-  * **Creemos que lograremos:** Disminuir en un 40% la carga administrativa en reportes diarios y alcanzar una tasa de renovación de suscripciones superior al 80%.
-  * **Si:** Las agencias de turismo de aventura (MYPEs)
-  * **Obtienen:** Una vista centralizada y unificada para la supervisión de todas sus expediciones activas, bitácoras de los guías e historial de escalamiento de incidentes
-  * **Con:** Un panel web operativo adaptable diseñado para el monitoreo tanto en tiempo real como en análisis posterior al tour.
-
----
-
-* **Hipótesis 4 — Módulo de Curaduría de Notas Técnicas de Ruta y Puntos Críticos**
-  * **Creemos que lograremos:** Una percepción de seguridad del turista del 95% y una tasa cercana a 0% de incidentes derivados de desinformación del terreno.
-  * **Si:** Los guías turísticos acreditados y los turistas de aventura
-  * **Obtienen:** Acceso a alertas y advertencias técnicas verificadas y actualizadas (zonas de derrumbe, crecida de ríos, puntos ciegos) exclusivas del operador turístico
-  * **Con:** Una herramienta de gestión y curaduría de notas de ruta administrada directamente por la agencia en la plataforma.
-
----
-
-* **Hipótesis 5 — Gestión Automatizada de Suscripciones SaaS (Software as a Service) con MercadoPago**
-  * **Creemos que lograremos:** Una tasa de conversión de al menos el 30% de agencias piloto a planes de pago recurrentes y una tasa de abandono en checkout inferior al 15%.
-  * **Si:** Los administradores de negocios de turismo de aventura en Cusco, Áncash, Arequipa y Puno
-  * **Obtienen:** Un proceso de facturación y pago flexible, seguro y sin fricciones mediante métodos de pago locales para suscripciones mensuales o por temporada
-  * **Con:** Un módulo de gestión de suscripciones SaaS integrado con la pasarela de pagos de MercadoPago.
+#### 1.2.2.3. Lean UX Hypothesis Statements
 
 #### 1.2.2.4. Lean UX Canvas
+
+El **Lean UX Canvas** de VitalTrek sintetiza las decisiones estratégicas y de diseño del proyecto en un modelo visual iterativo. A continuación, se detallan los ocho recuadros estructurados para guiar el desarrollo del MVP:
+
+| Recuadro del Canvas | Descripción y Contenido |
+| :--- | :--- |
+| **1. Business Problem**<br>*(Problema del Negocio)* | Las agencias de turismo de aventura (MYPEs) y guías en rutas de trekking aisladas (Cusco, Áncash, Arequipa, Puno) pierden total visibilidad operativa al ingresar a zonas sin cobertura celular, dependiendo de radios VHF/UHF sin trazabilidad automatizada o reportes manuales que retrasan la atención de incidentes. |
+| **2. Business Outcomes**<br>*(Resultados del Negocio)* | • **Reducción del 40%** en el tiempo promedio de detección de retrasos o anomalías.<br>• **95% de registros exitosos** en checkpoints configurados (pérdida de datos < 5%).<br>• **Reducción del 40%** en el tiempo promedio de gestión de incidencias.<br>• **Conversión del 25%** de agencias piloto a suscripciones anuales pagadas.<br>• **85% de percepción de seguridad** calificada como "Alta" o "Muy Alta" por turistas. |
+| **3. Users**<br>*(Usuarios / Personas)* | • **Administrador / Operador B2B:** Configura rutas, checkpoints y monitorea la expedición en el dashboard.<br>• **Guía de Campo:** Recibe alertas en tiempo real y ejecuta acciones correctivas en el terreno.<br>• **Turista B2C:** Porta el wearable y consulta la información técnica de la ruta offline. |
+| **4. User Outcomes & Benefits**<br>*(Resultados del Usuario)* | • **Agencias:** Control centralizado y reducción drástica de la incertidumbre operativa.<br>• **Guías:** Identificación rápida de turistas con descompensación física para priorizar asistencia.<br>• **Turistas:** Mayor tranquilidad en tramos aislados y autonomía de navegación offline. |
+| **5. Solutions**<br>*(Soluciones propuestas)* | • Motor de sincronización asincrónica por checkpoints Bluetooth.<br>• Algoritmo de detección temprana de anomalías en signos vitales y retrasos.<br>• Dashboard web centralizado de operaciones e incidentes.<br>• Módulo de curaduría de notas técnicas de ruta (offline).<br>• Módulo de gestión de suscripciones SaaS integrado con MercadoPago. |
+| **6. Hypotheses**<br>*(Hipótesis)* | • **H1 (Sync):** Creemos que con la sincronización por checkpoints Bluetooth lograremos registrar el 95% de pasadas en zonas sin señal.<br>• **H2 (Alertas):** Creemos que con el algoritmo por umbrales médicos reduriremos en 40% el tiempo de detección de anomalías.<br>• **H3 (Dashboard):** Creemos que con el dashboard centralizado reduriremos en 40% el tiempo de atención de reportes e incidencias.<br>• **H4 (Notas):** Creemos que con las notas de ruta offline alcanzaremos un 85% de percepción de seguridad alta en turistas.<br>• **H5 (MercadoPago):** Creemos que con el módulo de suscripciones integrado a MercadoPago convertiremos al 25% de agencias piloto a pago anual. |
+| **7. What's the most important thing we need to learn first?**<br>*(Riesgos / Aprendizaje prioritario)* | • ¿La frecuencia de sincronización por ráfagas Bluetooth en checkpoints es suficiente para detectar una anomalía a tiempo?<br>• ¿Las reglas de alerta generan falsas alarmas que saturen la atención del guía durante la caminata? |
+| **8. What's the least amount of work we can do to learn the next most important thing?**<br>*(Experimentos / MVP)* | • **Simulación de capa IoT y API RESTful:** Enviar eventos simulados a la API para medir la latencia y confiabilidad del motor de reglas sin requerir hardware físico.<br>• **Pruebas de usabilidad con prototipo en Figma:** Validar la comprensión del Dashboard con administradores de agencias MYPE en sesiones de 5 minutos. |
+
+![Lean UX Canvas — VitalTrek](./assets/images/chapter-1/lean-ux-canvas.png)
+*Figura 1.2.2.4. Representación visual del Lean UX Canvas para el ecosistema VitalTrek.*
 
 # 1.3 Segmentos Objetivo
 
