@@ -175,43 +175,40 @@ El despliegue inicial estará orientado a agencias y operadores de turismo de av
 
 #### 1.2.2.3. Lean UX Hypothesis Statement
 
-* **Hipótesis 1 — Sincronización offline en Checkpoints y Telemetría de Ubicación**
-  * **Creemos que lograremos:** Incrementar en un 85% la trazabilidad operativa del grupo y eliminar los puntos ciegos de telemetría en zonas remotas sin cobertura celular.
-  * **Si:** Los operadores de agencias de turismo de aventura y los guías de trekking en campo
-  * **Obtienen:** La transmisión automatizada y confiable de la ubicación y el estado de los turistas cada vez que el grupo pasa por un punto de control de la ruta
-  * **Con:** Un motor de sincronización asincrónica por checkpoints Bluetooth que captura y almacena temporalmente la telemetría local de los wearables.
+* **Hipótesis 1 - Sincronización offline en Checkpoints y Telemetría** 
 
----
+**Creemos que** lograremos registrar exitosamente el paso de al menos el 95% de los turistas por los checkpoints configurados, manteniendo una pérdida de datos inferior al 5% <br>
+**Si** los operadores de agencias de turismo de aventura y los guías de campo <br>
+**Obtienen** visibilidad continua sobre la posición y el estado de sus grupos en tramos sin cobertura celular <br>
+**Con** el motor de sincronización asincrónica por checkpoints Bluetooth <br>
 
-* **Hipótesis 2 — Motor de Detección Temprana de Anomalías en Signos Vitales y Retrasos**
-  * **Creemos que lograremos:** Reducir en un 60% el tiempo de respuesta ante emergencias y despliegue de búsqueda o rescate.
-  * **Si:** Los administradores de operaciones de la agencia y el personal de seguridad en campo
-  * **Obtienen:** Notificaciones automáticas de alerta temprana cuando un turista presenta métricas fisiológicas anormales (SpO2, ritmo cardíaco) o retrasos críticos respecto al tiempo estimado de ruta
-  * **Con:** Un algoritmo de backend basado en reglas y umbrales médicos configurados según la altitud y dificultad del recorrido.
+* **Hipótesis 2 - Motor de Detección Temprana de Anomalías y Retrasos**
 
----
+**Creemos que** lograremos reducir en un 40% el tiempo promedio de detección de retrasos o posibles anomalías durante los recorridos <br>
+**Si** los administradores de operaciones de la agencia y los guías de campo <br>
+**Obtienen** la capacidad de identificar tempranamente cuadros de descompensación física o desviaciones de tiempo antes de que se conviertan en emergencias <br>
+**Con** el algoritmo de detección temprana de anomalías en signos vitales y retrasos <br>
 
-* **Hipótesis 3 — Dashboard Web Centralizado de Operaciones e Incidentes**
-  * **Creemos que lograremos:** Disminuir en un 40% la carga administrativa en reportes diarios y alcanzar una tasa de renovación de suscripciones superior al 80%.
-  * **Si:** Las agencias de turismo de aventura (MYPEs)
-  * **Obtienen:** Una vista centralizada y unificada para la supervisión de todas sus expediciones activas, bitácoras de los guías e historial de escalamiento de incidentes
-  * **Con:** Un panel web operativo adaptable diseñado para el monitoreo tanto en tiempo real como en análisis posterior al tour.
+* **Hipótesis 3 - Dashboard Web Centralizado de Operaciones e Incidentes**
 
----
+**Creemos que** lograremos reducir en un 40% el tiempo promedio requerido por las agencias para identificar y gestionar incidencias durante las expediciones <br>
+**Si** las agencias y operadores de turismo de aventura (MYPEs) <br>
+**Obtienen** control centralizado de la seguridad operativa de todas sus expediciones y menor carga administrativa en reportes <br>
+**Con** el dashboard web centralizado de operaciones e incidentes <br>
 
-* **Hipótesis 4 — Módulo de Curaduría de Notas Técnicas de Ruta y Puntos Críticos**
-  * **Creemos que lograremos:** Una percepción de seguridad del turista del 95% y una tasa cercana a 0% de incidentes derivados de desinformación del terreno.
-  * **Si:** Los guías turísticos acreditados y los turistas de aventura
-  * **Obtienen:** Acceso a alertas y advertencias técnicas verificadas y actualizadas (zonas de derrumbe, crecida de ríos, puntos ciegos) exclusivas del operador turístico
-  * **Con:** Una herramienta de gestión y curaduría de notas de ruta administrada directamente por la agencia en la plataforma.
+* **Hipótesis 4 - Módulo de Curaduría de Notas Técnicas de Ruta**
 
----
+**Creemos que** lograremos que al menos el 85% de los turistas encuestados califique como "Alta" o "Muy Alta" su percepción de seguridad y utilidad de las herramientas durante la ruta <br>
+**Si** los guías de campo y los turistas de aventura <br>
+**Obtienen** prevención ante riesgos del terreno (derrumbes o crecidas) y autonomía para consultar información técnica verificada en modo offline <br>
+**Con** el módulo de curaduría de notas técnicas de ruta y puntos críticos <br>
 
-* **Hipótesis 5 — Gestión Automatizada de Suscripciones SaaS (Software as a Service) con MercadoPago**
-  * **Creemos que lograremos:** Una tasa de conversión de al menos el 30% de agencias piloto a planes de pago recurrentes y una tasa de abandono en checkout inferior al 15%.
-  * **Si:** Los administradores de negocios de turismo de aventura en Cusco, Áncash, Arequipa y Puno
-  * **Obtienen:** Un proceso de facturación y pago flexible, seguro y sin fricciones mediante métodos de pago locales para suscripciones mensuales o por temporada
-  * **Con:** Un módulo de gestión de suscripciones SaaS integrado con la pasarela de pagos de MercadoPago.
+* **Hipótesis 5 - Gestión Automatizada de Suscripciones SaaS con MercadoPago**
+
+**Creemos que** lograremos la conversión de al menos el 25% de las agencias participantes en pilotos gratuitos hacia una suscripción anual pagada durante los primeros 3 meses <br>
+**Si** los administradores de agencias de turismo de aventura en Cusco, Áncash, Arequipa y Puno <br>
+**Obtienen** la facilidad de activar y renovar el servicio mediante métodos de pago locales y flexibles sin fricciones administrativas <br>
+**Con** el módulo de gestión de suscripciones SaaS integrado con la pasarela de pagos de MercadoPago <br>
 
 #### 1.2.2.4. Lean UX Canvas
 
