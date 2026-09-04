@@ -1,6 +1,6 @@
-## Capítulo II: Requirements Elicitation & Analysis
+# Capítulo II: Requirements Elicitation & Analysis
  
-### 2.1. Competidores
+## 2.1. Competidores
  
 En esta sección se identifican y describen los principales competidores directos que operan en el dominio del problema que VitalTrek aborda: la gestión, monitoreo y trazabilidad de tours de aventura mediante productos digitales similares. Los tres competidores seleccionados comparten con VitalTrek el modelo de negocio basado en plataformas digitales orientadas al turismo de aventura, con funcionalidades superpuestas en gestión de tours, navegación, seguimiento periódico por checkpoints y experiencia del turista.
  
@@ -32,3 +32,114 @@ A continuación se presenta el cuadro Competitive Analysis Landscape, en el cual
 | Análisis SWOT       | Debilidades                                            | Marca nueva sin reconocimiento en el mercado. Curva de adopción tecnológica en agencias con baja madurez digital.                                                                                                                                                                                                       | Plataforma orientada principalmente a reservas, sin capacidades de monitoreo en tiempo real ni integración con dispositivos de tracking en campo. Interfaz no diseñada para uso en zonas sin conectividad. | Su tracking depende de la conectividad celular del dispositivo del viajero, lo que limita su utilidad en zonas remotas sin señal. No incorpora hardware IoT propio ni captura de signos vitales. Presencia inexistente en el mercado peruano. | No ofrece herramientas de gestión para agencias ni dashboards de supervisión. Cobertura limitada de rutas peruanas. Mapas offline restringidos a la versión de pago. Sin integración con dispositivos IoT. |
 | Análisis SWOT       | Oportunidades                                          | Crecimiento sostenido del turismo de aventura en el Perú con 14.1 millones de visitas a sitios turísticos en 2025 y aumento del 33.2 por ciento respecto a 2024. Alta demanda de soluciones de seguridad por parte de turistas y agencias. Bajo nivel de digitalización del sector permite posicionarse como referente. | Expansión hacia mercados latinoamericanos donde su presencia es limitada. Demanda creciente de digitalización en operadores turísticos.                                                                    | Expansión hacia mercados emergentes de turismo de aventura como Sudamérica y Asia. Integración futura con dispositivos satelitales o IoT podría ampliar su propuesta de valor.                                                                | Incorporación de funcionalidades para agencias podría ampliar su mercado. Crecimiento del turismo experiencial a nivel global.                                                                             |
 | Análisis SWOT       | Amenazas                                               | Llegada de competidores internacionales con mayor capital al mercado peruano. Adopción masiva de tecnologías satelitales como Starlink Direct to Cell que reduzcan la barrera de la conectividad. Competencia con plataformas globales con mayor presupuesto de marketing.                                              | Aparición de competidores locales con propuestas adaptadas culturalmente. Posible canibalización por parte de plataformas como Bokun o FareHarbor en mercados emergentes.                                  | Competidores con soluciones más completas que integren hardware propio. Saturación del mercado norteamericano de software para turismo.                                                                                                       | Competidores especializados en navegación offline regional con mejor cobertura local. Apps de mapas gratuitos como Google Maps incorporando funciones similares.                                           |
+
+
+## 2.2. Entrevistas
+ 
+### 2.2.1. Diseño de Entrevistas
+ 
+Las entrevistas constituyen la principal técnica de investigación cualitativa para la validación del problema y la propuesta de valor de VitalTrek. El objetivo es comprender en profundidad las necesidades, frustraciones, comportamientos actuales y expectativas de los dos segmentos de usuario identificados: los **dueños o responsables de agencias de turismo de aventura** y los **turistas de aventura**.
+ 
+---
+#### Objetivos Generales del Proceso de Entrevistas
+ 
+1. Validar la existencia y criticidad del problema de monitoreo y seguridad en tours de aventura en zonas remotas del Perú.
+2. Comprender cómo gestionan actualmente sus operaciones las agencias de turismo de aventura, identificando herramientas utilizadas, brechas y puntos de dolor.
+3. Explorar la disposición de las agencias a adoptar una solución tecnológica integrada y su sensibilidad al precio.
+4. Entender la experiencia del turista durante el tour: qué información desearía tener, qué situaciones de riesgo ha vivido y qué herramientas digitales ya usa.
+5. Identificar funcionalidades prioritarias y posibles fricciones en la adopción del producto desde la perspectiva de ambos segmentos.
+---
+ 
+#### Segmento 1: Dueños o Responsables de Agencias de Turismo de Aventura
+ 
+**Perfil del entrevistado:** propietarios, directores de operaciones o guías principales de agencias que operen rutas de trekking, montañismo, expediciones o turismo de naturaleza en zonas remotas del Perú. Preferiblemente agencias medianas o pequeñas con operaciones activas en sierra, selva alta o circuitos andinos.
+ 
+---
+ 
+**Preguntas de apertura y contexto**
+ 
+1. ¿Podría contarme brevemente cómo funciona su agencia? ¿Qué tipo de tours opera y en qué zonas del país?
+2. ¿Cuántos guías y turistas maneja típicamente en una temporada alta? ¿Cuántos grupos simultáneos puede llegar a tener activos?
+**Preguntas sobre gestión operativa actual**
+ 
+3. ¿Cómo realiza actualmente el seguimiento de sus grupos de turistas cuando están en campo? ¿Qué herramientas o medios utiliza (radio, celular, reportes manuales, apps)?
+4. ¿Con qué frecuencia sus guías o grupos se quedan sin señal durante el recorrido? ¿Cómo manejan esa situación actualmente?
+5. ¿Cómo coordina internamente a su equipo (guías, base de operaciones, contactos de emergencia) durante el desarrollo de un tour?
+6. ¿Lleva algún registro de los recorridos realizados, incidentes ocurridos o datos de los turistas durante el tour? ¿De qué forma?
+**Preguntas sobre seguridad y gestión de emergencias**
+ 
+7. ¿Ha vivido alguna situación de emergencia o incidente grave durante algún tour? ¿Cómo fue la respuesta? ¿Qué falló o qué hubiera necesitado tener disponible en ese momento?
+8. ¿Cómo determina si un turista está en una condición de riesgo (fatiga extrema, mal de altura, extravío) cuando no está físicamente con el guía?
+9. ¿Qué protocolos de seguridad tiene establecidos actualmente? ¿Los considera suficientes?
+10. ¿Ha recibido alguna vez una queja, reclamo o acción legal relacionada con un incidente de seguridad? ¿Cómo afectó eso a su operación?
+**Preguntas sobre tecnología y adopción**
+ 
+11. ¿Utiliza actualmente alguna herramienta digital o software para gestionar sus operaciones (reservas, logística, comunicación con guías)? ¿Cuál es su experiencia con ella?
+12. ¿Ha intentado implementar alguna solución tecnológica para el monitoreo en campo? ¿Qué resultó y qué no?
+13. ¿Qué barreras considera que existen para que agencias como la suya adopten soluciones tecnológicas de monitoreo?
+**Preguntas sobre disposición y expectativas**
+ 
+14. Si existiera una plataforma que le permitiera ver periódicamente, a través de puntos de control, la ubicación y estado de todos sus grupos activos desde un panel centralizado, ¿qué tan valiosa sería para usted? ¿Qué condiciones necesitaría para adoptarla?
+15. ¿Estaría dispuesto a pagar una suscripción mensual por una solución así? ¿Qué rango de precio consideraría razonable?
+16. ¿Qué funcionalidades consideraría indispensables y cuáles serían un plus? ¿Qué debería tener sí o sí desde el primer día?
+**Preguntas demográficas y de perfil**
+ 
+17. ¿Cuál es su edad y en qué distrito o ciudad opera su agencia?
+18. ¿Cuántos años de experiencia tiene en el sector turístico?
+19. ¿Qué dispositivo usa principalmente para gestionar su negocio (celular, laptop, tablet)?
+20. ¿Qué canales digitales usa más para comunicarse con su equipo o clientes (WhatsApp, Instagram, Facebook, correo)?
+21. ¿Sigue a alguna marca, asociación gremial (AATC, DIRCETUR) o referente del sector turístico que influya en sus decisiones?
+---
+ 
+#### Segmento 2: Turistas de Aventura
+ 
+**Perfil del entrevistado:** personas que hayan realizado al menos una actividad de turismo de aventura en el Perú en los últimos dos años (trekking, montañismo, expedición en selva o ruta de naturaleza en zonas remotas), ya sean nacionales o extranjeros residentes en el país.
+ 
+---
+ 
+**Preguntas de apertura y contexto**
+ 
+1. ¿Podría contarme sobre la última actividad de aventura que realizó en el Perú? ¿A dónde fue, qué ruta hizo y con quién?
+2. ¿Con qué frecuencia realiza este tipo de actividades? ¿Suele contratar agencias o prefiere organizar sus propias expediciones?
+**Preguntas sobre seguridad y experiencias previas**
+ 
+3. Durante ese recorrido, ¿hubo momentos en los que se sintió inseguro o sin saber bien dónde estaba o cómo pedir ayuda? ¿Puede contarme ese momento?
+4. ¿Alguna vez ha vivido o presenciado una emergencia o incidente durante un tour de aventura? ¿Cómo respondió la agencia o el guía?
+5. ¿Siente que las agencias con las que ha viajado tienen mecanismos adecuados para garantizar su seguridad en caso de emergencia? ¿Por qué?
+6. ¿Le preocupa la falta de conectividad o la dificultad para pedir ayuda cuando está en zonas remotas? ¿Cómo lo maneja actualmente?
+**Preguntas sobre herramientas y tecnología usada**
+ 
+7. ¿Qué aplicaciones o dispositivos utiliza durante sus actividades de aventura? (GPS, mapas offline, reloj deportivo, etc.) ¿Cuál es su experiencia con ellas?
+8. ¿Comparte su ubicación con alguien (familiar, contacto de emergencia) durante el recorrido? ¿Cómo lo hace?
+9. ¿Ha usado alguna aplicación que le permita ver su recorrido, registrar datos de salud (ritmo cardíaco, altitud) o documentar su experiencia durante el tour?
+**Preguntas sobre expectativas e información durante el tour**
+ 
+10. Durante un tour, ¿qué información le gustaría tener disponible en todo momento? (su posición en el mapa, distancia recorrida, signos vitales, clima, información sobre el lugar, etc.)
+11. ¿Le resultaría útil poder ver en su teléfono información contextual del recorrido, como datos históricos del lugar, puntos de interés o alertas de riesgo específicas de la ruta?
+12. ¿Cómo le gustaría registrar su experiencia durante el tour? ¿Fotos georreferenciadas, registros automáticos, notas de voz?
+**Preguntas sobre confianza y adopción**
+ 
+13. Si la agencia que contrató le ofreciera un dispositivo wearable que monitoree su ubicación y signos vitales durante el tour, ¿lo usaría? ¿Qué preguntas o dudas tendría al respecto?
+14. ¿Tiene alguna preocupación sobre la privacidad de sus datos si una agencia monitorea su ubicación y salud periódicamente durante el recorrido?
+15. ¿Cuánto influiría en su decisión de contratar una agencia el hecho de que esta cuente con tecnología de monitoreo por checkpoints y protocolos de emergencia avanzados?
+**Preguntas demográficas y de perfil**
+ 
+16. ¿Cuál es su edad y en qué distrito o ciudad reside?
+17. ¿Cuál es su estado civil y con quién suele viajar (pareja, familia, grupo, solo)?
+18. ¿A qué se dedica actualmente (ocupación)?
+19. ¿Qué dispositivo usa principalmente durante sus viajes (smartphone, reloj deportivo, GPS dedicado)?
+20. ¿Qué canales digitales usa más para planear o compartir sus viajes (Instagram, blogs, foros, YouTube)?
+21. ¿Sigue a alguna marca, influencer de viajes o comunidad de senderismo que influya en sus decisiones?
+---
+ 
+#### Consideraciones Metodológicas
+ 
+**Cantidad de entrevistas:** mínimo 3 y máximo 5 entrevistas por segmento (total: entre 6 y 10 entrevistas) para alcanzar saturación temática en una etapa de descubrimiento.
+ 
+**Registro:** Las entrevistas deben ser grabadas con consentimiento del entrevistado para su posterior análisis. Se recomienda el uso de una guía de toma de notas que permita capturar citas textuales relevantes.
+ 
+**Análisis:** Los resultados serán procesados mediante agrupamiento de respuestas por temática, identificando patrones comunes, necesidades no cubiertas y citas representativas para validar o refutar las hipótesis de problema y solución.
+ 
+**Ética:** Antes de cada entrevista se informará al participante sobre el propósito de la investigación, la confidencialidad de sus respuestas y su derecho a retirarse en cualquier momento. No se recopilará información personal identificable más allá de la necesaria para el reclutamiento.
+ 
+---
